@@ -18,8 +18,9 @@
     "resolveJsonModule": true,
     "isolatedModules": true,
     "noEmit": true,
-    "jsx": "react-jsx",
-    "checkJs": true
+    "jsx": "preserve",
+    "checkJs": true,
+    "experimentalDecorators": true
   },
   "include": [
     "src"
