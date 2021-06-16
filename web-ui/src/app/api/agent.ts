@@ -19,13 +19,13 @@ axios.interceptors.response.use(async response => {
     }
 });
 
-const reponseBody = <T>(reponse: AxiosResponse<T>) => reponse.data;
+const responseBody = <T>(response: AxiosResponse<T>) => response.data;
 
 const requests = {
-    get: <T>(url: string) => axios.get<T>(url).then(reponseBody),
-    post: <T>(url: string, body: {}) => axios.post<T>(url).then(reponseBody),
-    put: <T>(url: string, body: {}) => axios.put<T>(url).then(reponseBody),
-    del: <T>(url: string) => axios.delete<T>(url).then(reponseBody),
+    get: <T>(url: string) => axios.get<T>(url).then(responseBody),
+    post: <T>(url: string, body: {}) => axios.post<T>(url).then(responseBody),
+    put: <T>(url: string, body: {}) => axios.put<T>(url).then(responseBody),
+    del: <T>(url: string) => axios.delete<T>(url).then(responseBody),
 }
 
 const Activities = {

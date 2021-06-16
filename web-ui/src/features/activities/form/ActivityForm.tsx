@@ -9,7 +9,7 @@ export default observer(function ActivityForm() {
 
     const { activityStore } = useStore();
     const { createActivity, updateActivity, loading,
-        loadActivity, loadingInital } = activityStore;
+        loadActivity, loadingInitial } = activityStore;
     const { id } = useParams<{ id: string }>();
 
     const [activity, setActivity] = useState({
@@ -35,7 +35,7 @@ export default observer(function ActivityForm() {
         setActivity({ ...activity, [name]: value });
     }
 
-    if (loadingInital) return <LoadingComponent content='Loading activity...' />
+    if (loadingInitial) return <LoadingComponent content='Loading activity...' />
 
     return (
         <Segment clearing>

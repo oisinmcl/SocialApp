@@ -7,7 +7,7 @@ import { Link } from 'react-router-dom';
 export default observer(function ActivityList() {
 
     const { activityStore } = useStore();
-    const { deleteActivity, ActivtiesByDate, loading } = activityStore;
+    const { deleteActivity, ActivitiesByDate, loading } = activityStore;
 
     const [target, setTarget] = useState('');
 
@@ -19,7 +19,7 @@ export default observer(function ActivityList() {
     return (
         <Segment >
             <Item.Group divided>
-                {ActivtiesByDate.map(activity => (
+                {ActivitiesByDate.map(activity => (
                     <Item key={activity.id} >
                         <Item.Content>
                             <Item.Header as='a'>{activity.title}</Item.Header>

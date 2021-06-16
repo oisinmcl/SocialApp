@@ -64,7 +64,6 @@ export default class ActivityStore {
         return this.activityRegistry.get(id);
     }
 
-
     setLoadingInitial = (state: boolean) => {
         this.loadingInitial = state;
     }
