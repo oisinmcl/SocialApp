@@ -21,7 +21,6 @@
     "jsx": "react-jsx",
     "checkJs": true,
     "experimentalDecorators": true,
-    "noImplicitAny": false,
   },
   "include": [
     "src"
